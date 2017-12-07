@@ -49,7 +49,7 @@ def all_holidays_with_bbq(holiday_hash)
       data.each do |holiday, supplies|
         while i < supplies.length
           if supplies[i] == "BBQ"
-            new_holiday << supplies.keys
+            new_holiday << holiday
           end
         i += 1
         end
