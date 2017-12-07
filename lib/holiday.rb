@@ -49,6 +49,7 @@ def all_holidays_with_bbq(holiday_hash)
       data.each do |holiday, supplies|
         while i < supplies.length
           if supplies[i] == "BBQ"
+            binding.pry
             new_holiday << supplies.keys
           end
         i += 1
